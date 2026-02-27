@@ -28,36 +28,36 @@
     </div>
 
     <!-- Navigation Bar -->
-    <nav class="navbar glass-effect" id="navbar">
+    <nav class="navbar glass-effect" id="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#hero"><span class="logo-glow">✨</span> Habeeba Faiza</a>
+                <a href="#hero" aria-label="Habeeba Faiza - Admission Officer"><span class="logo-glow">✨</span> Habeeba Faiza</a>
             </div>
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="#about" class="nav-link" role="menuitem">About</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
+                <li class="nav-item" role="none">
+                    <a href="#services" class="nav-link" role="menuitem">Services</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                <li class="nav-item" role="none">
+                    <a href="#skills" class="nav-link" role="menuitem">Skills</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
+                <li class="nav-item" role="none">
+                    <a href="#experience" class="nav-link" role="menuitem">Experience</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                <li class="nav-item" role="none">
+                    <a href="#testimonials" class="nav-link" role="menuitem">Testimonials</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link nav-cta">Get in Touch</a>
+                <li class="nav-item" role="none">
+                    <a href="#contact" class="nav-link nav-cta" role="menuitem">Get in Touch</a>
                 </li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -70,8 +70,8 @@
             <p class="hero-subtitle">Transform your international education journey with expert guidance and personalized strategies</p>
             <p class="hero-description">Admission Officer • Study Abroad Specialist • International Education Expert</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary btn-glow">Start Your Journey<span class="btn-sparkle"></span></a>
-                <a href="#services" class="btn btn-secondary btn-hover-glow">Explore Services →</a>
+                <a href="#contact" class="btn btn-primary btn-glow" aria-label="Start your study abroad journey">Start Your Journey<span class="btn-sparkle"></span></a>
+                <a href="#services" class="btn btn-secondary btn-hover-glow" aria-label="Explore services offered">Explore Services →</a>
             </div>
             <div class="hero-scroll-indicator">
                 <span>Scroll to explore</span>
@@ -97,12 +97,12 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" aria-labelledby="about-title">
         <div class="section-glow"></div>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="title-underline"></div>
+                <h2 class="section-title" id="about-title">About Me</h2>
+                <div class="title-underline" aria-hidden="true"></div>
             </div>
             <div class="about-content">
                 <div class="about-text">
@@ -160,12 +160,12 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="services" aria-labelledby="services-title">
         <div class="section-glow services-glow"></div>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Premium Services</h2>
-                <div class="title-underline"></div>
+                <h2 class="section-title" id="services-title">Premium Services</h2>
+                <div class="title-underline" aria-hidden="true"></div>
             </div>
             <p class="section-subtitle">Comprehensive support for your study abroad journey</p>
             <div class="services-grid">
@@ -210,11 +210,11 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" aria-labelledby="skills-title">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Key Skills & Expertise</h2>
-                <div class="title-underline dark"></div>
+                <h2 class="section-title" id="skills-title">Key Skills & Expertise</h2>
+                <div class="title-underline dark" aria-hidden="true"></div>
             </div>
             <p class="section-subtitle">Specialized competencies for student success</p>
             <div class="skills-grid">
@@ -235,12 +235,12 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="experience" aria-labelledby="experience-title">
         <div class="section-glow"></div>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Experience & Achievements</h2>
-                <div class="title-underline"></div>
+                <h2 class="section-title" id="experience-title">Experience & Achievements</h2>
+                <div class="title-underline" aria-hidden="true"></div>
             </div>
             <div class="experience-timeline">
                 <div class="timeline-item fade-in-up">
@@ -280,12 +280,12 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
         <div class="section-glow"></div>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Success Stories</h2>
-                <div class="title-underline"></div>
+                <h2 class="section-title" id="testimonials-title">Success Stories</h2>
+                <div class="title-underline" aria-hidden="true"></div>
             </div>
             <p class="section-subtitle">Real experiences from students I've guided</p>
             <div class="testimonials-grid">
@@ -330,12 +330,12 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-labelledby="contact-title">
         <div class="contact-glow"></div>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Let's Connect</h2>
-                <div class="title-underline dark"></div>
+                <h2 class="section-title" id="contact-title">Let's Connect</h2>
+                <div class="title-underline dark" aria-hidden="true"></div>
             </div>
             <p class="section-subtitle">Ready to start your study abroad journey?</p>
             <div class="contact-content">

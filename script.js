@@ -61,16 +61,21 @@ window.addEventListener('scroll', () => {
 // Hamburger Menu Toggle
 // ================================
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', !isExpanded);
+    });
+}
 
 // Close menu when a link is clicked
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
     });
 });
 
