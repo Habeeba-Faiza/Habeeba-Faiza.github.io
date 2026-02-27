@@ -1045,3 +1045,299 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ===========================
+   PORTFOLIO / CASE STUDIES
+   =========================== */
+
+.portfolio {
+    position: relative;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, rgba(5, 8, 16, 0.8) 0%, rgba(10, 14, 39, 0.8) 100%);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.portfolio-card {
+    background: linear-gradient(135deg, rgba(15, 20, 51, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-top: 4px solid var(--accent-cyan);
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    border-top-color: var(--accent-cyan);
+    box-shadow: 0 20px 50px rgba(0, 212, 255, 0.15);
+}
+
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.portfolio-tag {
+    background: var(--accent-cyan);
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.portfolio-university {
+    font-size: 0.85rem;
+    color: var(--accent-blue);
+    font-weight: 500;
+}
+
+.portfolio-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    clear: left;
+}
+
+.portfolio-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.portfolio-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.portfolio-stats .stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-stats .label {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.portfolio-stats .value {
+    color: var(--accent-cyan);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* ===========================
+   CERTIFICATIONS & AWARDS
+   =========================== */
+
+.certifications {
+    position: relative;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, rgba(10, 14, 39, 0.8) 0%, rgba(5, 8, 16, 0.8) 100%);
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.cert-card {
+    background: linear-gradient(135deg, rgba(15, 20, 51, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.cert-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(124, 58, 237, 0.5);
+    box-shadow: 0 20px 50px rgba(124, 58, 237, 0.1);
+}
+
+.cert-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cert-card h4 {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.cert-issuer {
+    color: var(--accent-blue);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.cert-year {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+/* ===========================
+   RESUME SECTION
+   =========================== */
+
+.resume-section {
+    position: relative;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, 
+        var(--accent-cyan) 0%, 
+        var(--accent-blue) 50%, 
+        rgba(0, 153, 255, 0.9) 100%);
+    margin: 40px 0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.resume-content h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.resume-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-large {
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary.btn-large {
+    background: #fff;
+    color: var(--accent-blue);
+}
+
+.btn-primary.btn-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary.btn-large {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-secondary.btn-large:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   RESPONSIVE PORTFOLIO
+   =========================== */
+
+@media (max-width: 768px) {
+    .portfolio,
+    .certifications {
+        padding: 60px 15px;
+    }
+
+    .portfolio-grid,
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-card,
+    .cert-card {
+        padding: 20px;
+    }
+
+    .portfolio-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portfolio-stats {
+        gap: 10px;
+    }
+
+    .resume-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .resume-buttons {
+        flex-direction: column;
+    }
+
+    .btn-large {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio,
+    .certifications {
+        padding: 40px 10px;
+    }
+
+    .portfolio-card,
+    .cert-card {
+        padding: 15px;
+    }
+
+    .cert-card {
+        text-align: center;
+    }
+
+    .portfolio-header {
+        gap: 5px;
+    }
+
+    .resume-section {
+        padding: 40px 15px;
+    }
+
+    .resume-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .resume-content p {
+        font-size: 0.95rem;
+    }
+}
