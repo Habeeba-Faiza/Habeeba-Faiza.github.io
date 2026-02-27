@@ -1,5 +1,6 @@
 /* ================================
-   Vanilla JavaScript Interactivity
+   ✨ PREMIUM DARK SPARKLE THEME ✨
+   Advanced Vanilla JavaScript
    ================================ */
 
 // DOM Elements
@@ -7,6 +8,54 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 const navLinks = document.querySelectorAll('.nav-link');
 const navbar = document.getElementById('navbar');
+const pageLoader = document.getElementById('pageLoader');
+const sparklesContainer = document.getElementById('sparklesContainer');
+
+// ================================
+// Page Loader
+// ================================
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        pageLoader.classList.add('loaded');
+    }, 1500);
+});
+
+// ================================
+// Sparkle Generator
+// ================================
+
+function createSparkle(x, y) {
+    const sparkle = document.createElement('div');
+    sparkle.className = 'sparkle';
+    sparkle.style.left = x + 'px';
+    sparkle.style.top = y + 'px';
+    sparklesContainer.appendChild(sparkle);
+    setTimeout(() => sparkle.remove(), 3000);
+}
+
+// Generate random sparkles on scroll
+let sparkleInterval;
+window.addEventListener('scroll', () => {
+    if (!sparkleInterval) {
+        sparkleInterval = setInterval(() => {
+            if (Math.random() > 0.7) {
+                const x = Math.random() * window.innerWidth;
+                const y = Math.random() * window.innerHeight + window.scrollY;
+                if (Math.random() > 0.5) {
+                    createSparkle(x, y);
+                }
+            }
+        }, 200);
+    }
+});
+
+window.addEventListener('scroll', () => {
+    if (sparkleInterval && window.scrollY === 0) {
+        clearInterval(sparkleInterval);
+        sparkleInterval = null;
+    }
+});
 
 // ================================
 // Hamburger Menu Toggle
@@ -70,11 +119,11 @@ window.addEventListener('scroll', () => {
 });
 
 // ================================
-// Scroll Animations
+// Advanced Scroll Animations
 // ================================
 
 const observerOptions = {
-    threshold: 0.1,
+    threshold: 0.15,
     rootMargin: '0px 0px -100px 0px'
 };
 
@@ -87,28 +136,29 @@ const scrollObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all service cards, testimonial cards, and experience items
-document.querySelectorAll('.service-card, .testimonial-card, .timeline-item').forEach(el => {
+// Observe all cards for animation
+document.querySelectorAll('.service-card, .testimonial-card, .timeline-item, .skill-badge, .contact-method').forEach(el => {
     scrollObserver.observe(el);
 });
 
 // ================================
-// Navbar Transparency on Scroll
+// Advanced Scroll Effects
 // ================================
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+    if (window.scrollY > 50) {
+        navbar.style.boxShadow = '0 8px 32px rgba(0, 212, 255, 0.15)';
+        navbar.style.borderBottom = '1px solid rgba(0, 212, 255, 0.15)';
     } else {
-        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+        navbar.style.boxShadow = 'none';
+        navbar.style.borderBottom = '1px solid rgba(0, 212, 255, 0.1)';
     }
 });
 
 // ================================
-// Scroll to Top Button (Optional Enhancement)
+// Advanced Scroll to Top Button
 // ================================
 
-// Create scroll to top button
 const scrollTopBtn = document.createElement('button');
 scrollTopBtn.innerHTML = '↑';
 scrollTopBtn.className = 'scroll-top-btn';
@@ -118,20 +168,21 @@ scrollTopBtn.style.cssText = `
     right: 2rem;
     width: 50px;
     height: 50px;
-    background-color: #1e3a5f;
-    color: white;
+    background: linear-gradient(135deg, #00d4ff, #0099ff);
+    color: #0a0e27;
     border: none;
     border-radius: 50%;
     font-size: 1.5rem;
+    font-weight: 800;
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.5);
 `;
 
 document.body.appendChild(scrollTopBtn);
@@ -154,35 +205,75 @@ scrollTopBtn.addEventListener('click', () => {
 });
 
 scrollTopBtn.addEventListener('mouseenter', () => {
-    scrollTopBtn.style.backgroundColor = '#2d5a8c';
-    scrollTopBtn.style.transform = 'scale(1.1)';
+    scrollTopBtn.style.transform = 'scale(1.15) translateY(-5px)';
+    scrollTopBtn.style.boxShadow = '0 0 60px rgba(0, 212, 255, 0.8)';
 });
 
 scrollTopBtn.addEventListener('mouseleave', () => {
-    scrollTopBtn.style.backgroundColor = '#1e3a5f';
-    scrollTopBtn.style.transform = 'scale(1)';
+    scrollTopBtn.style.transform = 'scale(1) translateY(0)';
+    scrollTopBtn.style.boxShadow = '0 0 40px rgba(0, 212, 255, 0.5)';
 });
 
 // ================================
-// Contact Form Email Handling
+// Enhanced Button Sparkle Effect
 // ================================
 
-// Ensure mailto links open in default email client
-document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
-    link.addEventListener('mouseenter', () => {
-        link.style.opacity = '0.8';
-    });
+document.querySelectorAll('.btn-glow').forEach(button => {
+    button.addEventListener('mousemove', (e) => {
+        const rect = button.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
 
-    link.addEventListener('mouseleave', () => {
-        link.style.opacity = '1';
+        const sparkle = document.createElement('span');
+        sparkle.className = 'btn-sparkle';
+        sparkle.style.setProperty('--tx', (Math.random() - 0.5) * 100 + 'px');
+        sparkle.style.setProperty('--ty', (Math.random() - 0.5) * 100 + 'px');
+        sparkle.style.left = x + 'px';
+        sparkle.style.top = y + 'px';
+
+        button.appendChild(sparkle);
+        setTimeout(() => sparkle.remove(), 600);
     });
 });
 
 // ================================
-// Performance: Lazy Load Animations
+// Mouse Glow Effect for Cards
 // ================================
 
-// Add animation delay to service cards for staggered effect
+document.querySelectorAll('.card-glow').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+        card.style.setProperty('--mouse-x', x + '%');
+        card.style.setProperty('--mouse-y', y + '%');
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.setProperty('--mouse-x', '50%');
+        card.style.setProperty('--mouse-y', '50%');
+    });
+});
+
+// ================================
+// Contact Methods Interaction
+// ================================
+
+document.querySelectorAll('.contact-method').forEach(method => {
+    method.addEventListener('mouseenter', () => {
+        method.style.transform = 'translateY(-15px)';
+    });
+
+    method.addEventListener('mouseleave', () => {
+        method.style.transform = 'translateY(0)';
+    });
+});
+
+// ================================
+// Service Cards Stagger Animation
+// ================================
+
 document.querySelectorAll('.service-card').forEach((card, index) => {
     card.style.animationDelay = `${index * 0.1}s`;
 });
@@ -191,7 +282,6 @@ document.querySelectorAll('.service-card').forEach((card, index) => {
 // Keyboard Accessibility
 // ================================
 
-// Close mobile menu on Escape key
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         hamburger.classList.remove('active');
@@ -200,41 +290,19 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ================================
-// Console Branding (Optional)
+// Console Branding
 // ================================
+
+const styles = {
+    title: 'color: #00d4ff; font-size: 18px; font-weight: bold;',
+    subtitle: 'color: #0099ff; font-size: 12px;'
+};
 
 console.log(
-    '%cHabeeba Faiza - Admission Officer & Study Abroad Specialist',
-    'color: #1e3a5f; font-size: 16px; font-weight: bold;'
+    `%c✨ Habeeba Faiza - Premium Portfolio\n%c🌍 Admission Officer & Study Abroad Specialist\n📱 Built with HTML5, CSS3 & Vanilla JavaScript | 🎨 Dark Sparkle Theme | ⚡ High Performance`,
+    styles.title,
+    styles.subtitle
 );
-console.log(
-    '%cPortfolio Website | Built with HTML5, CSS3, and Vanilla JavaScript',
-    'color: #3b7ec4; font-size: 12px;'
-);
-
-// ================================
-// PWA Support (Optional)
-// ================================
-
-// Register service worker for offline support (optional)
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        // Uncomment to enable service worker
-        // navigator.serviceWorker.register('service-worker.js');
-    });
-}
-
-// ================================
-// Page Visibility - Pause animations when tab is not active
-// ================================
-
-document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-        // Page is hidden
-    } else {
-        // Page is visible
-    }
-});
 
 // ================================
 // Enhanced Scroll Performance
@@ -245,8 +313,20 @@ window.addEventListener('scroll', () => {
     if (scrollTimeout) {
         window.cancelAnimationFrame(scrollTimeout);
     }
-
     scrollTimeout = window.requestAnimationFrame(() => {
-        // Scroll events handled by other listeners
+        // Optimized scroll handling
     });
 }, { passive: true });
+
+// ================================
+// Dynamic Color Animation
+// ================================
+
+setInterval(() => {
+    const colors = ['#00d4ff', '#0099ff', '#7c3aed'];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.querySelectorAll('.text-glow').forEach(el => {
+        el.style.color = randomColor;
+    });
+}, 5000);
+

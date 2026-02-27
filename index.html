@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Habeeba Faiza - Admission Officer & Study Abroad Guidance Specialist. Expert in international student admissions, university applications, and career counseling.">
-    <meta name="keywords" content="admission counselor, study abroad, international education, university applications, career guidance">
+    <meta name="description" content="Habeeba Faiza - Admission Officer & Study Abroad Guidance Specialist. Expert in international student admissions, university applications, and career counseling. Transform your study abroad dreams into reality.">
+    <meta name="keywords" content="admission counselor, study abroad, international education, university applications, career guidance, admissions expertise, student counseling">
     <meta name="author" content="Habeeba Faiza">
-    <title>Habeeba Faiza - Admission Officer & Study Abroad Specialist</title>
+    <meta name="og:title" content="Habeeba Faiza - Admission Officer & Study Abroad Specialist">
+    <meta name="og:description" content="Expert guidance for international student admissions and study abroad success.">
+    <meta name="og:image" content="https://habeebafaiza.github.io/preview.jpg">
+    <meta name="theme-color" content="#0a0e27">
+    <title>Habeeba Faiza | Admission Officer & Study Abroad Specialist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Sparkle Background Animation -->
+    <div class="sparkles-container" id="sparklesContainer"></div>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+        <p>Loading your journey...</p>
+    </div>
+
     <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar glass-effect" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#hero">Habeeba Faiza</a>
+                <a href="#hero"><span class="logo-glow">✨</span> Habeeba Faiza</a>
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li class="nav-item">
@@ -49,21 +63,34 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
+        <div class="hero-particles"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Build Your Dream Abroad</h1>
-            <p class="hero-subtitle">Expert guidance for university admissions and study abroad success</p>
-            <p class="hero-description">Admission Officer | Study Abroad Guidance Specialist | International Education Expert</p>
+            <span class="hero-badge">🌍 Study Abroad Expert</span>
+            <h1 class="hero-title"><span class="text-gradient">Build Your Dream</span> <span class="text-glow">Abroad</span></h1>
+            <p class="hero-subtitle">Transform your international education journey with expert guidance and personalized strategies</p>
+            <p class="hero-description">Admission Officer • Study Abroad Specialist • International Education Expert</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Start Your Journey</a>
-                <a href="#services" class="btn btn-secondary">Explore Services</a>
+                <a href="#contact" class="btn btn-primary btn-glow">Start Your Journey<span class="btn-sparkle"></span></a>
+                <a href="#services" class="btn btn-secondary btn-hover-glow">Explore Services →</a>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow"></div>
             </div>
         </div>
         <div class="hero-image">
-            <div class="hero-placeholder">
+            <div class="hero-placeholder floating">
+                <div class="floating-glow"></div>
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100" cy="60" r="40" fill="#1e3a5f"/>
-                    <path d="M 60 120 Q 100 140 140 120 L 140 200 L 60 200 Z" fill="#1e3a5f"/>
-                    <circle cx="100" cy="100" r="35" fill="#2d5a8c" opacity="0.8"/>
+                    <defs>
+                        <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0099ff;stop-opacity:0.5" />
+                        </radialGradient>
+                    </defs>
+                    <circle cx="100" cy="60" r="40" fill="url(#glowGradient)"/>
+                    <path d="M 60 120 Q 100 140 140 120 L 140 200 L 60 200 Z" fill="#00d4ff" opacity="0.8"/>
+                    <circle cx="100" cy="100" r="35" fill="#0099ff" opacity="0.6"/>
                 </svg>
             </div>
         </div>
@@ -71,8 +98,12 @@
 
     <!-- About Section -->
     <section id="about" class="about">
+        <div class="section-glow"></div>
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-intro">
@@ -85,17 +116,17 @@
                         I believe in personalized guidance tailored to each student's unique goals and circumstances. My approach combines technical knowledge of admissions processes with genuine mentorship to ensure students make informed decisions about their future.
                     </p>
                     <div class="about-highlights">
-                        <div class="highlight-item">
+                        <div class="highlight-item card-glow">
                             <div class="highlight-icon">📚</div>
                             <h4>International Education</h4>
                             <p>Expert in global university selection and applications</p>
                         </div>
-                        <div class="highlight-item">
+                        <div class="highlight-item card-glow">
                             <div class="highlight-icon">🎯</div>
                             <h4>Personalized Guidance</h4>
                             <p>Tailored strategies for each student's unique needs</p>
                         </div>
-                        <div class="highlight-item">
+                        <div class="highlight-item card-glow">
                             <div class="highlight-icon">💼</div>
                             <h4>Career Planning</h4>
                             <p>Strategic career counseling aligned with education</p>
@@ -103,19 +134,23 @@
                     </div>
                 </div>
                 <div class="about-stats">
-                    <div class="stat-card">
+                    <div class="stat-card card-glow">
+                        <div class="stat-icon">👥</div>
                         <div class="stat-number">500+</div>
                         <div class="stat-label">Students Guided</div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card card-glow">
+                        <div class="stat-icon">🎓</div>
                         <div class="stat-number">95%</div>
                         <div class="stat-label">Success Rate</div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card card-glow">
+                        <div class="stat-icon">🌐</div>
                         <div class="stat-number">50+</div>
                         <div class="stat-label">Universities</div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card card-glow">
+                        <div class="stat-icon">⭐</div>
                         <div class="stat-number">8+</div>
                         <div class="stat-label">Years Experience</div>
                     </div>
@@ -126,41 +161,45 @@
 
     <!-- Services Section -->
     <section id="services" class="services">
+        <div class="section-glow services-glow"></div>
         <div class="container">
-            <h2 class="section-title">Services</h2>
+            <div class="section-header">
+                <h2 class="section-title">Premium Services</h2>
+                <div class="title-underline"></div>
+            </div>
             <p class="section-subtitle">Comprehensive support for your study abroad journey</p>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card card-glow hover-lift">
                     <div class="service-icon">🎓</div>
                     <h3>Admission Counseling</h3>
                     <p>Personalized guidance on university selection, application strategies, and interview preparation to maximize your chances of admission.</p>
                     <a href="#contact" class="service-link">Learn More →</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card card-glow hover-lift">
                     <div class="service-icon">🔍</div>
                     <h3>University Shortlisting</h3>
                     <p>Expert analysis of your profile to identify universities that align with your academic goals, budget, and career aspirations.</p>
                     <a href="#contact" class="service-link">Learn More →</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card card-glow hover-lift">
                     <div class="service-icon">📝</div>
                     <h3>Application Support</h3>
                     <p>Comprehensive assistance with application preparation, essay writing, recommendation letters, and submission management.</p>
                     <a href="#contact" class="service-link">Learn More →</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card card-glow hover-lift">
                     <div class="service-icon">🌍</div>
                     <h3>Study Abroad Guidance</h3>
                     <p>End-to-end support including visa guidance, accommodation planning, and cultural adjustment strategies for your new country.</p>
                     <a href="#contact" class="service-link">Learn More →</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card card-glow hover-lift">
                     <div class="service-icon">💰</div>
                     <h3>Financial Planning</h3>
                     <p>Analysis of scholarship opportunities, financial aid options, and cost-benefit analysis for different universities and programs.</p>
                     <a href="#contact" class="service-link">Learn More →</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card card-glow hover-lift">
                     <div class="service-icon">🤝</div>
                     <h3>Career Counseling</h3>
                     <p>Strategic career planning aligned with your education, including internship guidance and post-graduation opportunities.</p>
@@ -173,7 +212,10 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Key Skills & Expertise</h2>
+            <div class="section-header">
+                <h2 class="section-title">Key Skills & Expertise</h2>
+                <div class="title-underline dark"></div>
+            </div>
             <p class="section-subtitle">Specialized competencies for student success</p>
             <div class="skills-grid">
                 <div class="skill-badge">International Student Admissions</div>
@@ -194,12 +236,16 @@
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
+        <div class="section-glow"></div>
         <div class="container">
-            <h2 class="section-title">Experience & Achievements</h2>
+            <div class="section-header">
+                <h2 class="section-title">Experience & Achievements</h2>
+                <div class="title-underline"></div>
+            </div>
             <div class="experience-timeline">
-                <div class="timeline-item">
+                <div class="timeline-item fade-in-up">
                     <div class="timeline-icon"></div>
-                    <div class="timeline-content">
+                    <div class="timeline-content card-glow">
                         <h3>Senior Admission Officer</h3>
                         <p class="timeline-date">2020 - Present</p>
                         <p class="timeline-description">
@@ -212,9 +258,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item fade-in-up">
                     <div class="timeline-icon"></div>
-                    <div class="timeline-content">
+                    <div class="timeline-content card-glow">
                         <h3>Study Abroad Guidance Specialist</h3>
                         <p class="timeline-date">2018 - 2020</p>
                         <p class="timeline-description">
@@ -227,9 +273,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item fade-in-up">
                     <div class="timeline-icon"></div>
-                    <div class="timeline-content">
+                    <div class="timeline-content card-glow">
                         <h3>Admission Coordinator</h3>
                         <p class="timeline-date">2016 - 2018</p>
                         <p class="timeline-description">
@@ -248,11 +294,15 @@
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
+        <div class="section-glow"></div>
         <div class="container">
-            <h2 class="section-title">What Students Say</h2>
+            <div class="section-header">
+                <h2 class="section-title">Success Stories</h2>
+                <div class="title-underline"></div>
+            </div>
             <p class="section-subtitle">Real experiences from students I've guided</p>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
+                <div class="testimonial-card card-glow hover-lift">
                     <div class="stars">★★★★★</div>
                     <p class="testimonial-text">
                         "Habeeba's guidance was instrumental in my university selection process. She understood my goals and helped me identify universities that were perfect fit. Her support throughout the application process was invaluable."
@@ -264,7 +314,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card card-glow hover-lift">
                     <div class="stars">★★★★★</div>
                     <p class="testimonial-text">
                         "The personalized approach and attention to detail made all the difference. Habeeba helped me craft compelling essays and prepared me thoroughly for interviews. I got admitted to my top choice!"
@@ -276,7 +326,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card card-glow hover-lift">
                     <div class="stars">★★★★★</div>
                     <p class="testimonial-text">
                         "Not only did Habeeba help me with applications, but she also guided me through visa processes and settling into a new country. Her holistic approach to student guidance is truly unique and effective."
@@ -294,32 +344,36 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
+        <div class="contact-glow"></div>
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="title-underline dark"></div>
+            </div>
             <p class="section-subtitle">Ready to start your study abroad journey?</p>
             <div class="contact-content">
                 <p class="contact-intro">
                     I'm here to help you navigate your educational goals and plan your successful study abroad journey. Reach out to schedule a consultation or discuss your specific needs.
                 </p>
                 <div class="contact-methods">
-                    <div class="contact-method">
+                    <div class="contact-method card-glow hover-lift">
                         <div class="contact-icon">📧</div>
                         <h3>Email</h3>
                         <a href="mailto:habeeba.faiza@example.com" class="contact-link">habeeba.faiza@example.com</a>
                     </div>
-                    <div class="contact-method">
+                    <div class="contact-method card-glow hover-lift">
                         <div class="contact-icon">💼</div>
                         <h3>LinkedIn</h3>
                         <a href="https://linkedin.com/in/habeebafaiza" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/habeebafaiza</a>
                     </div>
-                    <div class="contact-method">
+                    <div class="contact-method card-glow hover-lift">
                         <div class="contact-icon">📱</div>
                         <h3>WhatsApp</h3>
                         <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="contact-link">+1 234 567 890</a>
                     </div>
                 </div>
                 <div class="contact-cta">
-                    <a href="mailto:habeeba.faiza@example.com" class="btn btn-primary btn-large">Send Me an Email</a>
+                    <a href="mailto:habeeba.faiza@example.com" class="btn btn-primary btn-large btn-glow">Send Me an Email<span class="btn-sparkle"></span></a>
                 </div>
             </div>
         </div>
@@ -350,7 +404,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Habeeba Faiza. All rights reserved.</p>
+                <p>&copy; 2026 Habeeba Faiza. All rights reserved. | Crafted with <span style="color: #00d4ff;">✨</span></p>
             </div>
         </div>
     </footer>
