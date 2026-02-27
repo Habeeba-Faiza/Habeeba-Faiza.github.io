@@ -260,6 +260,21 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.btn,
+button.btn {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-block;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
 .btn-primary {
     background-color: white;
     color: var(--primary-color);
