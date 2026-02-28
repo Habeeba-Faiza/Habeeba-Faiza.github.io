@@ -298,13 +298,48 @@ document.addEventListener('keydown', (e) => {
 // Console Branding
 // ================================
 
+// ================================
+// Navbar Scroll Effect
+// ================================
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+}, { passive: true });
+
+// ================================
+// Scroll to Top Button
+// ================================
+
+const scrollTopBtn = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('show');
+    } else {
+        scrollTopBtn.classList.remove('show');
+    }
+}, { passive: true });
+
+if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
 const styles = {
-    title: 'color: #00d4ff; font-size: 18px; font-weight: bold;',
+    title: 'color: #00f5ff; font-size: 18px; font-weight: bold;',
     subtitle: 'color: #0099ff; font-size: 12px;'
 };
 
 console.log(
-    `%c✨ Habeeba Faiza - Premium Portfolio\n%c🌍 Admission Officer & Study Abroad Specialist\n📱 Built with HTML5, CSS3 & Vanilla JavaScript | 🎨 Dark Sparkle Theme | ⚡ High Performance`,
+    `%c✨ Habeeba Faiza - Premium Portfolio 2026\n%c🌍 Admission Officer & Study Abroad Specialist\n📱 Built with HTML5, CSS3 & Vanilla JavaScript | 🎨 Modern Glassmorphism Theme | ⚡ High Performance`,
     styles.title,
     styles.subtitle
 );
