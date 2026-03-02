@@ -141,7 +141,7 @@ body::before {
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 4rem);
-    max-width: 1300px;
+    max-width: 1450px;
     z-index: var(--z-sticky);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
@@ -150,6 +150,8 @@ body::before {
     border-radius: var(--radius-2xl);
     box-shadow: var(--glass-shadow);
     transition: var(--transition-smooth);
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .navbar.scrolled {
@@ -198,12 +200,13 @@ body::before {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.95rem;
-    padding: var(--space-xs) var(--space-md);
+    font-size: 0.9rem;
+    padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-lg);
     transition: var(--transition-base);
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .nav-link::before {
