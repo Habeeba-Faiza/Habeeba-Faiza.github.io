@@ -15,13 +15,27 @@ const sparklesContainer = document.getElementById('sparklesContainer');
 // Page Loader
 // ================================
 
-window.addEventListener('load', () => {
+function hideLoader() {
     if (pageLoader) {
         setTimeout(() => {
             pageLoader.classList.add('hidden');
         }, 1500);
     }
-});
+}
+
+// Check if page is already loaded
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    hideLoader();
+} else {
+    window.addEventListener('load', hideLoader);
+}
+
+// Fallback: Force hide loader after 3 seconds maximum
+setTimeout(() => {
+    if (pageLoader && !pageLoader.classList.contains('hidden')) {
+        pageLoader.classList.add('hidden');
+    }
+}, 3000);
 
 // ================================
 // Sparkle Generator
