@@ -15,27 +15,33 @@ const sparklesContainer = document.getElementById('sparklesContainer');
 // Page Loader
 // ================================
 
-function hideLoader() {
+// Hide loader immediately with multiple approaches
+function hidePageLoader() {
     if (pageLoader) {
-        setTimeout(() => {
-            pageLoader.classList.add('hidden');
-        }, 1500);
-    }
-}
-
-// Check if page is already loaded
-if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    hideLoader();
-} else {
-    window.addEventListener('load', hideLoader);
-}
-
-// Fallback: Force hide loader after 3 seconds maximum
-setTimeout(() => {
-    if (pageLoader && !pageLoader.classList.contains('hidden')) {
         pageLoader.classList.add('hidden');
+        pageLoader.style.display = 'none';
+        pageLoader.style.opacity = '0';
+        pageLoader.style.visibility = 'hidden';
     }
-}, 3000);
+}
+
+// Approach 1: DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(hidePageLoader, 1500);
+});
+
+// Approach 2: Load event
+window.addEventListener('load', () => {
+    setTimeout(hidePageLoader, 1500);
+});
+
+// Approach 3: If already loaded
+if (document.readyState === 'complete') {
+    setTimeout(hidePageLoader, 1500);
+}
+
+// Failsafe: Force hide after 3 seconds
+setTimeout(hidePageLoader, 3000);
 
 // ================================
 // Sparkle Generator
