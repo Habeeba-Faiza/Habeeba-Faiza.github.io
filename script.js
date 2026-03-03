@@ -163,7 +163,10 @@ const observerOptions = {
 const scrollObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-up');
+            // Add 'visible' class to trigger animations without hiding elements
+            entry.target.classList.add('visible', 'animate');
+            entry.target.style.opacity = '1';
+            entry.target.style.visibility = 'visible';
             scrollObserver.unobserve(entry.target);
         }
     });
@@ -175,6 +178,9 @@ const elementsToObserve = document.querySelectorAll(
 );
 
 elementsToObserve.forEach(el => {
+    // Ensure elements are visible by default
+    el.style.opacity = '1';
+    el.style.visibility = 'visible';
     scrollObserver.observe(el);
 });
 

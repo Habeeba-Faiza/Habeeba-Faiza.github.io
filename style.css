@@ -1202,14 +1202,47 @@ section {
    ================================ */
 
 .fade-in-up {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(0);
     transition: var(--transition-smooth);
 }
 
 .fade-in-up.animate {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Ensure all sections and cards are visible by default */
+.service-card,
+.testimonial-card,
+.timeline-item,
+.skill-badge,
+.contact-method {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Ensure all main sections are always visible */
+#services,
+#skills,
+#experience,
+#portfolio,
+#testimonials,
+#contact {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+/* Ensure section content is visible */
+.services-grid,
+.skills-grid,
+.experience-timeline,
+.portfolio-grid,
+.testimonials-grid,
+.contact-methods {
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 /* ================================
