@@ -6,38 +6,38 @@ import { Section, Container, SectionHeader } from './ui/Section'
 
 const articles = [
   {
-    title: 'Navigating UK University Admissions: A Comprehensive Guide for International Students',
-    excerpt: 'Understanding the complexities of UK higher education applications, from choosing the right institution to mastering documentation requirements.',
+    title: 'How to Build a High-Quality UK University Application Strategy',
+    excerpt: 'A practical framework for shortlisting institutions, planning timelines, and strengthening application quality for international candidates.',
     category: 'Application Strategy',
     readTime: '8 min read',
   },
   {
-    title: 'The Evolution of International Student Recruitment in Post-Brexit Britain',
-    excerpt: 'Analyzing changing immigration policies and their impact on international student pathways to UK universities.',
+    title: 'International Student Recruitment in the UK: What Is Changing Now',
+    excerpt: 'Key policy and market shifts shaping student pathways, institution expectations, and admissions priorities.',
     category: 'Industry Trends',
     readTime: '10 min read',
   },
   {
-    title: 'Building Efficient Admissions Workflows: Lessons from Processing 10,000+ Applications',
-    excerpt: 'How systematic process optimization and quality control measures improve both speed and accuracy in admissions operations.',
+    title: 'Designing Admissions Workflows That Scale Without Losing Quality',
+    excerpt: 'Operational lessons on reducing processing delays while improving documentation standards and decision consistency.',
     category: 'Operational Excellence',
     readTime: '7 min read',
   },
   {
-    title: 'Cross-Cultural Communication in Higher Education Admissions',
-    excerpt: 'Best practices for supporting diverse international student populations through culturally sensitive guidance.',
+    title: 'Cross-Cultural Communication That Improves Student Outcomes',
+    excerpt: 'Communication practices that build trust, reduce friction, and support clearer decision-making for international applicants.',
     category: 'Student Experience',
     readTime: '6 min read',
   },
   {
-    title: 'CRM Systems and Data Management Excellence in Education',
-    excerpt: 'Leveraging technology to maintain data accuracy, compliance, and operational efficiency in student information management.',
+    title: 'CRM and Data Governance in Modern Admissions Operations',
+    excerpt: 'How admissions teams can use CRM discipline to improve data quality, compliance readiness, and reporting clarity.',
     category: 'Technology',
     readTime: '9 min read',
   },
   {
-    title: 'Quality Assurance in International Admissions: A Framework for Success',
-    excerpt: 'Developing systematic approaches to maintain 98%+ accuracy rates while scaling operations.',
+    title: 'Quality Assurance Frameworks for International Admissions Teams',
+    excerpt: 'A checklist-based model to protect quality, reduce rework, and maintain service standards during peak intake cycles.',
     category: 'Quality Management',
     readTime: '8 min read',
   },
@@ -46,15 +46,15 @@ const articles = [
 const insights = [
   {
     stat: 'UK International Students',
-    description: 'The UK hosts over 600,000 international students, making it the second most popular destination globally for higher education.',
+    description: 'The UK remains one of the world&apos;s top destinations for international students, creating sustained demand for strong admissions operations.',
   },
   {
-    stat: 'Application Complexity',
-    description: 'Average UK university application requires 15-20 document types, with processing times varying from 2-8 weeks.',
+    stat: 'Admissions Complexity',
+    description: 'Documentation-heavy pathways require precise review systems, timeline discipline, and clear applicant communication.',
   },
   {
     stat: 'Digital Transformation',
-    description: 'Higher education institutions are increasingly adopting AI and automation, reducing processing times by up to 40%.',
+    description: 'Institutions are investing in process automation, making data quality and workflow design critical capabilities for admissions teams.',
   },
 ]
 
@@ -70,7 +70,7 @@ export const ThoughtLeadership: React.FC = () => {
         >
           <SectionHeader 
             title="Thought Leadership" 
-            subtitle="Insights on higher education, admissions, and international student pathways"
+            subtitle="Practical insights on admissions quality, student pathways, and higher education operations"
           />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">

@@ -22,23 +22,22 @@ export const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-neutral-900 mb-8 leading-tight">
-              Connecting{' '}
-              <span className="text-primary-600">Global Talent</span>
+              International Admissions
               <br />
-              with World-Class Education
+              <span className="text-primary-600">with Precision, Speed, and Impact</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-neutral-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Empowering students and institutions through expert admissions guidance, 
-              streamlined processes, and a commitment to excellence in higher education.
+              I help institutions and students navigate complex university admissions workflows 
+              through structured evaluation, documentation excellence, and student-first guidance.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="primary" size="lg" href="#contact">
-                Get In Touch
+                Let&apos;s Connect
               </Button>
               <Button variant="outline" size="lg" href="#portfolio">
-                View My Work
+                See Case Studies
               </Button>
             </div>
           </motion.div>
@@ -59,11 +58,11 @@ export const Hero: React.FC = () => {
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-neutral-900 mb-2">98%</div>
-              <div className="text-sm md:text-base text-neutral-600">Accuracy Rate</div>
+              <div className="text-sm md:text-base text-neutral-600">Documentation Accuracy</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-neutral-900 mb-2">20+</div>
-              <div className="text-sm md:text-base text-neutral-600">Partner Universities</div>
+              <div className="text-sm md:text-base text-neutral-600">UK University Partners</div>
             </div>
           </motion.div>
         </div>

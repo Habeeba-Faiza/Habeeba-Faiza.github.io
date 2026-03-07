@@ -16,7 +16,7 @@ export const About: React.FC = () => {
         >
           <SectionHeader 
             title="About Me" 
-            subtitle="Building bridges between ambitious students and transformative educational opportunities"
+            subtitle="A results-driven admissions professional focused on quality, compliance, and student success"
           />
           
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -24,20 +24,19 @@ export const About: React.FC = () => {
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-neutral-700 leading-relaxed mb-6">
                   As an <strong>Admission Officer</strong> with expertise in international higher education, 
-                  I specialize in guiding students through the complex landscape of university admissions 
-                  while ensuring institutions maintain the highest standards of excellence.
+                  I manage high-volume application workflows while maintaining strong standards in 
+                  evaluation quality, documentation control, and turnaround time.
                 </p>
                 
                 <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-                  My journey in education has been driven by a singular mission: <strong>to make 
-                  quality higher education accessible</strong> to talented students worldwide, while 
-                  streamlining admissions processes for leading universities.
+                  My professional focus is to <strong>improve admissions outcomes at scale</strong> by 
+                  combining structured assessment processes with student-centered communication and guidance.
                 </p>
                 
                 <p className="text-lg text-neutral-700 leading-relaxed">
                   With extensive experience in <strong>UK university admissions</strong>, CRM management, 
-                  and international documentation, I&apos;ve developed a systematic approach that balances 
-                  efficiency with the personal touch each student deserves.
+                  and compliance-driven documentation, I&apos;ve built a practical operating model that balances 
+                  speed, accuracy, and a consistently professional applicant experience.
                 </p>
               </div>
             </div>
@@ -46,8 +45,8 @@ export const About: React.FC = () => {
               <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded-r-lg">
                 <h3 className="text-xl font-semibold text-neutral-900 mb-3">My Mission</h3>
                 <p className="text-neutral-700">
-                  To transform the admissions experience by combining deep expertise, 
-                  innovative processes, and genuine care for student success.
+                  To elevate international admissions standards through measurable process excellence 
+                  and trusted student guidance.
                 </p>
               </div>
               
@@ -75,19 +74,19 @@ export const About: React.FC = () => {
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start">
                     <span className="text-primary-400 mr-2">✓</span>
-                    <span>Student-centered approach</span>
+                    <span>Clarity and accountability in every case</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-400 mr-2">✓</span>
-                    <span>Precision and attention to detail</span>
+                    <span>Precision in documentation and decisions</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-400 mr-2">✓</span>
-                    <span>Continuous process improvement</span>
+                    <span>Continuous workflow optimization</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-400 mr-2">✓</span>
-                    <span>Cultural sensitivity and inclusion</span>
+                    <span>Culturally aware student support</span>
                   </li>
                 </ul>
               </div>
