@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   keywords: ['admissions officer', 'university admissions', 'international education', 'UK universities', 'student guidance', 'educational consultant'],
   openGraph: {
     type: 'website',
-    url: 'https://habeebafaiza.com',
+    url: 'https://habeeba-faiza.github.io/',
     title: 'Habeeba Faiza | International Admissions Specialist',
     description: 'Expert guidance for UK university admissions and international education pathways',
     images: [
