@@ -6,82 +6,82 @@ import { Section, Container, SectionHeader } from './ui/Section'
 
 const projects = [
   {
-    title: 'Admissions Workflow Optimization',
-    category: 'Process Improvement',
-    description: 'Rebuilt the application review journey to improve speed, consistency, and documentation quality across intake cycles.',
+    title: 'International Admissions Intake Coordination',
+    category: 'Admissions Operations',
+    description: 'Coordinated end-to-end application flow across each intake cycle, balancing profile tracking, follow-ups, and submission readiness.',
     impact: [
-      'Reduced processing time from 10 days to 6 days (40% improvement)',
-      'Increased accuracy rate from 92% to 98%',
-      'Introduced structured quality checkpoints across decision stages',
-      'Improved student-facing service feedback by 25%'
+      'Managed 40+ student/client profiles per intake',
+      'Improved intake visibility through structured follow-up checkpoints',
+      'Supported smoother handoffs between counseling, documentation, and submissions',
+      'Contributed to stronger offer-conversion support through workflow consistency'
     ],
-    metrics: '2,000+ applications annually',
-    technologies: ['CRM Optimization', 'Process Mapping', 'Quality Assurance'],
+    metrics: '40+ profiles per intake',
+    technologies: ['CRM Tracking', 'Follow-up Scheduling', 'Workflow Coordination'],
   },
   {
-    title: 'CRM Database Restructuring',
-    category: 'Data Management',
-    description: 'Led a full CRM cleanup and governance initiative to improve data quality and reporting reliability.',
+    title: 'Documentation Compliance and Eligibility Review',
+    category: 'Compliance & Quality',
+    description: 'Built a compliance-first review approach for eligibility checks and documentation verification before application progression.',
     impact: [
-      'Achieved 99.8% data accuracy rate',
-      'Reduced duplicate records by 95%',
-      'Built recurring data validation controls',
-      'Improved reporting clarity and usability by 60%'
+      'Performed eligibility checks and document verification per profile',
+      'Reduced avoidable delays through pre-submission compliance review',
+      'Improved consistency of documentation readiness across cases',
+      'Supported policy-aligned submissions for partner universities'
     ],
-    metrics: '10,000+ student records',
-    technologies: ['Database Management', 'Data Validation', 'System Integration'],
+    metrics: 'Compliance review integrated into each intake workflow',
+    technologies: ['Eligibility Screening', 'Documentation Control', 'Quality Checks'],
   },
   {
-    title: 'International Student Guidance Framework',
+    title: 'Pre-CAS and Mock Interview Coordination',
     category: 'Student Experience',
-    description: 'Designed a structured guidance model to support applicants from profile planning through final submission readiness.',
+    description: 'Organized credibility interview schedules and communication workflows to support student readiness and timely participation.',
     impact: [
-      '95% student satisfaction rating',
-      'Reduced application errors by 40%',
-      'Created standardized communication and checklist templates',
-      'Served applicants from 50+ countries'
+      'Scheduled and coordinated Pre-CAS and mock interviews',
+      'Improved student readiness through structured reminders and follow-ups',
+      'Aligned communication between students, counselors, and internal teams',
+      'Supported smoother interview execution within intake timelines'
     ],
-    metrics: '50+ countries served',
-    technologies: ['Communication Strategy', 'Cultural Competency', 'Support Systems'],
+    metrics: 'Interview coordination built into standard admissions workflow',
+    technologies: ['Calendar Coordination', 'Stakeholder Communication', 'Student Support'],
   },
   {
-    title: 'Compliance & Documentation System',
-    category: 'Regulatory Excellence',
-    description: 'Implemented a documentation control framework to strengthen compliance readiness and reduce avoidable rework.',
+    title: 'CRM Record and Financial Document Control',
+    category: 'Data & Administration',
+    description: 'Maintained operational records, CRM status updates, invoices, and TT copies for clear tracking and traceable submissions.',
     impact: [
-      '100% compliance rate maintained',
-      'Zero refusals attributed to documentation errors in managed cases',
-      'Improved CAS-related document turnaround',
-      'Established an internal audit-trail method'
+      'Kept detailed logs and CRM records updated throughout application stages',
+      'Improved transparency of student status across internal stakeholders',
+      'Supported timely submission with complete financial and admin records',
+      'Strengthened documentation traceability for internal reviews'
     ],
-    metrics: '100% compliance rate',
-    technologies: ['UKVI Standards', 'Documentation Control', 'Audit Systems'],
+    metrics: 'Ongoing record management across active intake cases',
+    technologies: ['CRM Systems', 'Record Management', 'Financial Documentation'],
   },
   {
-    title: 'Multi-University Partnership Program',
-    category: 'Stakeholder Management',
-    description: 'Coordinated admissions communication and submission standards across a broad network of UK institutions.',
+    title: 'Entrepreneur Startup Planning and Venture Creation',
+    category: 'Academic Project',
+    description: 'Developed a structured venture-planning framework during MBA, combining market research and practical model design.',
     impact: [
-      'Supported relationships across 20+ university partners',
-      'Managed submissions across 100+ academic programs',
-      'Maintained consistent service and documentation standards',
-      'Achieved 98% partner satisfaction score'
+      'Created a 20+ section business planning framework',
+      'Improved project clarity by 40%',
+      'Conducted market research with 150+ respondents',
+      'Improved MVP engagement by 30%'
     ],
-    metrics: '20+ university partners',
-    technologies: ['Relationship Management', 'Coordination', 'Service Excellence'],
+    metrics: 'MBA project | Mar 2024 - May 2024',
+    technologies: ['Market Research', 'Business Modeling', 'Data Analysis'],
   },
   {
-    title: 'Peak Season Operations Scaling',
-    category: 'Operational Excellence',
-    description: 'Scaled operations during peak intake windows without compromising decision quality or response consistency.',
+    title: 'Campus Event Operations Leadership',
+    category: 'Leadership Project',
+    description: 'Led student operations for college cultural events, managing team coordination, participation planning, and execution support.',
     impact: [
-      'Handled 3x normal application volume',
-      'Maintained quality benchmarks throughout peak period',
-      'Reduced average response time by 30%',
-      'Implemented intake-based capacity planning model'
+      'Led a 40-member organizing team',
+      'Coordinated events with 200+ participants',
+      'Improved participation by 25% through structured engagement efforts',
+      'Strengthened cross-team planning and communication'
     ],
-    metrics: '3x volume capacity',
-    technologies: ['Capacity Planning', 'Resource Management', 'Performance Optimization'],
+    metrics: '40-member team | 200+ participants',
+    technologies: ['Team Coordination', 'Event Planning', 'Stakeholder Communication'],
   },
 ]
 
@@ -97,7 +97,7 @@ export const Portfolio: React.FC = () => {
         >
           <SectionHeader 
             title="Professional Portfolio" 
-            subtitle="Selected case studies demonstrating measurable impact across admissions operations"
+            subtitle="Real projects across admissions coordination, documentation quality, and operational execution"
           />
           
           <div className="grid md:grid-cols-2 gap-8">
